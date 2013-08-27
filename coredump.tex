@@ -1,0 +1,109 @@
+%%% PREAMBLE %%%
+
+% Strict mode
+
+\RequirePackage[l2tabu, orthodox]{nag} % Warn when using deprecated constructs
+
+% Document class and packages
+
+\documentclass[10pt,a4paper,parskip,fleqn]{scrartcl}
+\usepackage[a4paper,vmargin={30mm},hmargin={30mm}]{geometry} % Page margins
+\usepackage[ngerman]{babel} % New German hyphenation (multilingual support)
+\usepackage[utf8x]{inputenc} % Unicode support
+\usepackage{graphicx} % Graphics support
+\usepackage{enumitem} % List spacing
+\usepackage{nopageno} % No page numbers
+\usepackage{chngpage} % Adjust page width
+\usepackage{calc} % Calculations
+\usepackage{color} % Colors
+
+% Font configuration
+
+\usepackage[sc]{mathpazo} % Use palatino font
+\usepackage[T1]{fontenc} % Use correct font encoding
+\usepackage[babel=true]{microtype} % Micro-typographic optimizations
+\usepackage{setspace} % Line spacing
+\addtokomafont{disposition}{\rmfamily} % Set palatino as heading font
+\setstretch{1.3}
+\setlist{nolistsep} % No spacing in lists
+
+
+%%% TITLEPAGE %%%
+
+\title{\Huge coredump rapperswil}
+\subject{Informationen zum Verein}
+
+
+%%% MAIN DOCUMENT %%%
+
+\begin{document}
+
+\begin{titlepage}
+
+	\maketitle
+
+	\vspace{2cm}
+
+	\begin{adjustwidth}{-\oddsidemargin-1in}{-\rightmargin-1in}
+		\includegraphics[width=\paperwidth]{soldering.jpg}
+
+		\vspace{-12mm}
+
+		\definecolor{light-gray}{gray}{0.85}
+		\hfill {\scriptsize \color{light-gray} CC BY-NC-SA flickr.com/cbeas}
+	\end{adjustwidth}
+
+	\vfill
+
+\end{titlepage}
+
+\section{Der Verein}
+
+Der Verein \textit{coredump} in Rapperswil-Jona wurde am 26. August 2013 von
+fünf HSR-Studenten aus den Studienrichtungen Informatik und Elektrotechnik
+gegründet. Das Ziel des Vereines ist der Betrieb eines Hackerspaces in
+Rapperswil.
+
+Ein Hackerspace ist ein Raum oder Gebäude, in dem sich an Wissenschaft,
+Technologie oder digitaler Kunst (und vielen anderen Bereichen) Interessierte
+treffen und austauschen sowie an gemeinsamen Projekten arbeiten können.
+
+Das Wort \textit{Hacker} wird dabei gemäss der ursprünglichen Begriffsdefinition
+verwendet. Er bezeichnet nicht etwa Kriminelle, welche in fremde Computernetze
+eindringen, sondern Technikenthusiasten, welche sich kreativ und intensiv mit
+Technologie auseinandersetzen und versuchen diese zu verstehen und zu
+kontrollieren, anstatt selbst von ihr kontrolliert zu werden.
+
+Die zwei Ziele des Vereins gemäss Vereinsstatuten sind:
+
+\begin{itemize}
+		\item Bereitstellung der Infrastruktur zur Arbeit an nicht-kommerziellen
+			technischen Projekten.
+		\item Förderung des Informationsaustausches an regelmässigen Treffen,
+			speziell im Bereich der Technologie.
+\end{itemize}
+
+In unserem Hackerspace möchten wir einerseits die Möglichkeiten und das Umfeld
+zur Umsetzung von interessanten Projekten anbieten, andererseits auch den
+Austausch von Wissen fördern. Dies kann regelmässige Treffen, öffentliche
+Kurzvorträge oder auch Bildungsangebote und Workshops für interessierte
+Aussenstehende beinhalten.
+
+Als Mitglieder in unserem Verein ist jeder willkommen, der sich für kreativen
+Umgang mit Technik interessiert und die Vereinsziele unterstützen kann.
+
+
+\section{Die Gründungsmitglieder}
+
+Wir sind fünf technikbegeisterte Informatik- und Elektrotechnikstudenten der
+Hochschule für Technik Rapperswil. Wir möchten den kreativen Umgang mit Technik
+fördern und interessierten Personen den praktischen Einstieg in die Elektronik
+und Informatik durch das do-it-yourself Prinzip ermöglichen.
+
+Als Studenten hätten wir natürlich auch im Rahmen der Hochschule einen solchen
+Verein gründen können, allerdings wäre dieser dann nur für Studenten zugänglich
+und würde Absolventen sowie nicht-studentische Interessenten ausschliessen.
+Deshalb haben wir uns bewusst dafür entschieden, einen von der HSR unabhängigen
+Verein zu gründen.
+
+\end{document}
