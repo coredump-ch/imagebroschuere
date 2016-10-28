@@ -17,6 +17,10 @@
 \usepackage{calc} % Calculations
 \usepackage{color} % Colors
 \usepackage{hyperref} % Hyperlinks
+\usepackage{subfig} % Subfigures (für fotos)
+\usepackage{float} % H placing specifier
+
+\captionsetup[figure]{font=small,aboveskip=4pt,belowskip=8pt}
 
 % Font configuration
 
@@ -58,6 +62,58 @@
 
 \end{titlepage}
 
+\section{Management Summary}
+
+\subsection{Über Uns}
+
+\begin{itemize}
+	\item Wir sind ein Verein, welcher Technikbegeisterten in der Gegend die
+		technische Infrastruktur für nonkommerzielle Projekte anbietet. Daneben
+		verfolgen wir auch Bildungsprojekte wie den Ferienpass Rapperswil-Jona oder
+		öffentliche Vorträge.
+	\item Unser Vereinsraum bietet Arbeitsplätze, eine Elektronik-Werkstatt mit
+		Lötstation und Messgeräten, einen 3D-Drucker, eine Bibliothek, eine Sitzecke
+		mit Getränkekühlschrank und vieles mehr.
+	\item Wir befinden uns im Sonnenhof Rapperswil auf 50m².
+	\item Aktuell haben wir 28 Mitglieder.
+	\item Unser typisches Mitglied ist zwischen 25 und 30 Jahre alt, wobei wir
+		auch jüngere und ältere Mitglieder haben. Viele der Mitglieder haben ein
+		Elektrotechnik- oder Informatikstudium hinter sich, oder studieren aktuell
+		noch.
+	\item Besucher sind jederzeit willkommen. Wir treffen uns jeden Montag ab 20
+		Uhr.
+	\item Einige Projekte unserer Mitglieder: Farbige interaktive LED-Steuerungen
+		für Outdoor-Festivals, low-power IoT-Wassertemperatursensoren für den
+		Obersee, selber entwickelte Open Source PCB-Design-Software, orthopädische
+		Alltagshilfen aus dem 3D-Drucker, eine selbst gebaute Tesla-Spule, ein
+		mithilfe von Drohnen rekonstruiertes 3D-Modell des Schloss Rapperswils, eine
+		selbstgebaute Infrarot-Fernbedienung für Canon-Spiegelreflexkameras, und
+		vieles mehr.
+\end{itemize}
+
+\subsection{Finanzierung}
+
+\begin{itemize}
+	\item Wir finanzieren uns primär über die Mitgliederbeiträge und private
+		Gönner. Ein Nichtverdienermitglied bezahlt 10 CHF pro Monat, ein
+		Verdienermitglied 30 CHF pro Monat und ein Fördermitglied 50 CHF pro Monat.
+	\item Obwohl unser Verein stetig wächst, benötigen wir momentan noch weitere
+		finanzielle Unterstützung von Sponsoren oder Gönnern.
+	\item Als Gegenleistung erhält der Sponsor einen Werbeplatz in unserem
+		Vereinsraum. Darauf könnten Sie beispielsweise Ihre Firma vorstellen oder
+		Jobangebote publizieren.
+	\item Desweiteren erhält der Sponsor einen stets sichtbaren Link auf unserer
+		Website (\url{coredump.ch}) und wird in einem Blogpost sowie an jeder GV den
+		Mitgliedern vorgestellt.
+	\item Sponsoring-Pakete: Small (80 CHF im Monat) oder Large (120 CHF im
+		Monat). Andere Beträge sind auch möglich.
+\end{itemize}
+
+Weitere Informationen finden Sie auf den folgenden Seiten sowie auf
+\url{coredump.ch}.
+
+\newpage
+
 \section{Über Uns}
 
 Als erster Hackerspace\footnote{Mehr Informationen dazu gibt es auf
@@ -89,23 +145,23 @@ regelmässige Treffen, öffentliche Kurzvorträge oder auch Bildungsangebote und
 Workshops für interessierte Aussenstehende (z.B. Ferienpass-Kurse für
 Schulkinder) beinhalten.
 
+\includegraphics[width=\textwidth]{raum.jpg}
+
 \section{Projekte}
 
-Damit Sie sich ein Bild unserer Aktivitäten machen können, nachfolgend drei
-unserer aktuellen Projekte:
+Damit Sie sich ein Bild unserer Aktivitäten machen können, drei unserer
+aktuellen Projekte:
 
 \textbf{Ferienpass im Computer- und Technikbereich}
 
 Im November 2014 boten wir zum ersten Mal im Rahmen des Ferienpasses
-Rapperswil-Jona\footnote{\url{Website: http://fepa-rj.ch/}} einen Löt- und einen
-Programmierkurs für Kinder an. Diese -- wie auch wir selbst -- waren davon
-begeistert: Wir erhielten 86 Anmeldungen und konnten davon aus Platzgründen
-leider nur 16 berücksichtigen. Auch im Herbst 2015 und 2016 boten wir die Kurse
-wieder an, mit sehr positivem Feedback. Wir freuen uns, auch in Zukunft
-weiterhin Schulkinder aus Rapperswil-Jona mit Technik in Kontakt zu bringen und
-dafür zu begeistern.
+Rapperswil-Jona einen Löt- und einen Programmierkurs für Kinder an. Diese -- wie
+auch wir selbst -- waren davon begeistert: Wir erhielten 86 Anmeldungen und
+konnten davon aus Platzgründen leider nur 16 berücksichtigen. Auch im Herbst
+2015 und 2016 boten wir die Kurse wieder an, mit sehr positivem Feedback. Wir
+freuen uns, auch in Zukunft weiterhin Schulkinder aus Rapperswil-Jona mit
+Technik in Kontakt zu bringen und dafür zu begeistern.
 
-\newpage
 \textbf{Wassertemperatursensoren Zürichsee}
 
 Aktuell ist es für badefreudige Personen am Obersee schwierig, herauszufinden
@@ -123,6 +179,8 @@ Im Rahmen dieser Aktion haben wir unter anderem mit Hilfe eines Quadrokopters
 einen 3D-Scan des Schlosses Rapperswil erstellt, diese Daten in Kooperation mit
 der Hochschule für Technik HSR sowie dem Rapperswiler Start-Up ``Drei-De''
 aufbereitet und ein druckfertiges Modell erzeugt.
+
+\includegraphics[width=\textwidth]{tesla.jpg}
 
 \section{Finanzierung}
 
@@ -150,7 +208,7 @@ Als Gegenleistung erhalten Sie als Sponsor folgende Möglichkeiten:
 
 \begin{itemize}
 	\item Einen Werbeplatz in unserem Vereinsraum: Ein A4-Blatt (<<small>>) bzw.
-		ein A3-Blatt (<<large>>) auf dem Sie Ihre Firma vorstellen, Ihre Jobs
+		ein A3-Blatt (<<large>>), auf dem Sie Ihre Firma vorstellen, Ihre Jobs
 		ausschreiben, oder schlicht Ihr Firmenlogo positionieren können. Das Blatt
 		werden wir in unseren Räumlichkeiten an der Wand befestigen, wodurch sich
 		Mitglieder und Besucher über Ihre Firma informieren können.
@@ -165,8 +223,8 @@ oft schwierig. Bei einer Gewerbeausstellung hingegen wissen Sie, wieviele
 Besucher erwartet werden. Bei einem Werbeplakat oder einem Onlinebanner wissen
 Sie, welche Reichweite es hat. Sie sind bereit, viel Geld auszugeben um Kunden
 zu erreichen. Aber wie erreichen Sie talentierte Arbeitskäfte? Über Headhunter?
-Bei uns können Sie vergleichsweise günstig mit zukünftigen Fachkräften in
-Kontakt treten.
+Bei uns können Sie vergleichsweise günstig mit potentiellen zukünftigen
+Fachkräften in Kontakt treten.
 
 Auch wenn Sie sich nicht für ein Sponsoring entscheiden, dürfen Sie gerne an
 einem Montag auf ein Bier vorbeikommen und mit Software-Entwicklern,
@@ -174,10 +232,24 @@ Elektrotechnikern, HSR-/ETH-Studenten und Firmengründern plaudern.
 
 \section{Weitere Informationen}
 
-Weitere Informationen zu uns und unserem Verein finden Sie auf unserer
-Website:\\\url{https://www.coredump.ch/}.
+Weitere Informationen zu uns und unserem Verein finden Sie auf unserer Website:
+\url{coredump.ch}.
 
 Für Rückfragen können Sie den Vorstand unter \url{vorstand@lists.coredump.ch}
-kontaktieren.
+oder 079 728 93 96 kontaktieren. Gerne stellen wir uns auch mal persönlich bei
+Ihnen vor.
+
+\section{Fotos}
+
+\begin{figure}[H]
+\begin{tabular}{cc}
+	\captionbox*{Laptop-Arbeitsplatz}{\includegraphics[width=0.5\textwidth]{laptop.jpg}} &
+	\captionbox*{Eigene Leiterplatten ätzen}{\includegraphics[width=0.5\textwidth]{aetzen.jpg}} \\
+	\captionbox*{3D-gedrucktes Schloss Rapperswil}{\includegraphics[width=0.5\textwidth]{schloss.jpg}} &
+	\captionbox*{Stand am Frühlingsfest 2016}{\includegraphics[width=0.5\textwidth]{fruehlingsfest.jpg}} \\
+	\captionbox*{Ferienpass 2016: Löten}{\includegraphics[width=0.5\textwidth]{fepa.jpg}} &
+	\captionbox*{Ferienpass 2016: 3D-Design}{\includegraphics[width=0.5\textwidth]{fepa2.jpg}} \\
+\end{tabular}
+\end{figure}
 
 \end{document}
