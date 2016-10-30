@@ -1,24 +1,15 @@
 SHELL=bash
-TARGET=coredump.pdf
 LL=latexmk -pdf
 CLEAN=latexmk -C
 
-all: $(TARGET)
+all: coredump.pdf sponsoring.pdf
 
-pdf: $(TARGET)
+.PHONY : clean all
 
-.PHONY : clean $(TARGET)
-
-$(TARGET): $(TARGET:%.pdf=%.tex) $(SRC)
+%.pdf: %.tex
 	$(LL) $<
 
 clean:
 	$(CLEAN)
-
-mupdf:
-	mupdf $(TARGET) &
-
-zathura:
-	zathura $(TARGET) &
 
 # vim: set tabstop=4 shiftwidth=4 noexpandtab:
