@@ -2,7 +2,7 @@ SHELL=bash
 LL=latexmk -pdf
 CLEAN=latexmk -C
 
-all: coredump.pdf sponsoring.pdf
+all: coredump.pdf sponsoring.pdf sponsoring_eng.pdf
 
 .PHONY : clean all
 
