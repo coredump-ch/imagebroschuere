@@ -34,7 +34,7 @@
 
 % Constants
 
-\newcommand{\membercount}{29}
+\newcommand{\membercount}{25}
 
 
 %%% TITLEPAGE %%%
@@ -81,8 +81,8 @@ Dokumentes.
 	\item Unser Vereinsraum bietet Arbeitsplätze, eine Elektronik-Werkstatt mit
 		Lötstation und Messgeräten, einen 3D-Drucker, eine Bibliothek, eine Sitzecke
 		mit Getränkekühlschrank und vieles mehr.
-	\item Wir befinden uns im Sonnenhof Rapperswil auf 50m².
-	\item Aktuell haben wir \membercount{} Mitglieder.
+	\item Wir befinden uns auf dem Vinora-Areal in Rapperswil-Jona auf 100m².
+	\item Aktuell haben wir \membercount{} Aktivmitglieder.
 	\item Unser typisches Mitglied ist zwischen 25 und 30 Jahre alt, wobei wir
 		auch jüngere und ältere Mitglieder haben. Viele der Mitglieder haben ein
 		Elektrotechnik- oder Informatikstudium hinter sich, oder studieren aktuell
@@ -90,7 +90,8 @@ Dokumentes.
 	\item Besucher sind jederzeit willkommen. Wir treffen uns jeden Montag ab 20
 		Uhr.
 	\item Einige Projekte unserer Mitglieder: Farbige interaktive LED-Steuerungen
-		für Outdoor-Festivals, orthopädische Alltagshilfen aus dem 3D-Drucker,
+		für Outdoor-Festivals, low-power IoT-Wassertemperatursensoren für den
+		Obersee mit LoRaWAN, orthopädische Alltagshilfen aus dem 3D-Drucker,
 		Wassertemperatursensoren für den Obersee, selber entwickelte Open Source
 		PCB-Design-Software, eine selbst gebaute Tesla-Spule, ein mithilfe von
 		Drohnen rekonstruiertes 3D-Modell des Schloss Rapperswils, eine
@@ -106,7 +107,7 @@ Dokumentes.
 		Verdienermitglied 30 CHF pro Monat und ein Fördermitglied 50 CHF pro Monat.
 	\item Obwohl unser Verein stetig wächst, benötigen wir momentan noch weitere
 		finanzielle Unterstützung von Sponsoren oder Gönnern -- primär zur Deckung
-		der Fixkosten.
+		der Fixkosten und zum Verbessern unserer Einrichtung.
 	\item Als Gegenleistung erhält der Sponsor einen Werbeplatz in unserem
 		Vereinsraum. Darauf könnten Sie beispielsweise Ihre Firma vorstellen oder
 		Jobangebote publizieren.
@@ -141,12 +142,14 @@ Wikipedia: \url{https://de.wikipedia.org/wiki/Hacker}} um den kreativen Umgang
 mit Technik und Wissen. Wir bieten Infrastruktur und KnowHow, um
 nichtkommerzielle Projekte alleine oder in Kollaboration zu realisieren.
 
-Unser zentral im Sonnenhof Rapperswil gelegener 50m²-Vereinsraum bietet aktuell
-eine Elektronikwerkstatt mit Lötstation, Labornetzteil und Messgeräten, einen
-3D-Drucker mit diversen Druckmaterialien, Arbeitsplätze für mitgebrachte
-Laptops, WLAN mit Internetverbindung, ein Lager mit Elektronikbauteilen und
-Entwicklungs-Kits, eine kleine Bibliothek mit Fachliteratur, einen Kühlschrank
-und eine Mikrowelle für die Verpflegung vor Ort.
+Unser geräumiger 100m²-Vereinsraum auf dem Vinora-Areal in Jona bietet aktuell
+eine Elektronikwerkstatt mit Lötstationen, Reflow-Ofen, Labornetzteilen,
+Mikroskop und Messgeräten, einen 3D-Drucker mit diversen Druckmaterialien, eine
+PCB-Fräse sowie eine Ätz-Station zum Herstellen von PCBs, Arbeitsplätze für
+mitgebrachte Laptops, WLAN mit Internetverbindung, ein Lager mit
+Elektronikbauteilen und Entwicklungs-Kits, eine kleine Bibliothek mit
+Fachliteratur, zwei Kühlschränke und eine Mikrowelle für die Verpflegung vor
+Ort.
 
 In unserem Hackerspace möchten wir einerseits die Möglichkeiten und das Umfeld
 zur Umsetzung von interessanten technischen oder künstlerischen Projekten
@@ -168,10 +171,22 @@ Im November 2014 boten wir zum ersten Mal im Rahmen des Ferienpasses
 Rapperswil-Jona einen Löt- und einen Programmierkurs für Kinder an. Diese -- wie
 auch wir selbst -- waren davon begeistert: Wir erhielten 86 Anmeldungen und
 konnten davon aus Platzgründen leider nur 16 berücksichtigen. Auch im Herbst
-2015 und 2016 boten wir wieder Ferienpass-Kurse an, darunter ein neuer
-3D-Druck-Kurs), mit sehr positivem Feedback. Wir freuen uns, auch in Zukunft
-weiterhin Schulkinder aus Rapperswil-Jona mit Technik in Kontakt zu bringen und
-dafür zu begeistern.
+2015, 2016 und 2018 boten wir wieder Ferienpass-Kurse an, mit sehr positivem
+Feedback. Wir freuen uns, auch in Zukunft weiterhin Schulkinder aus
+Rapperswil-Jona mit Technik in Kontakt zu bringen und dafür zu begeistern.
+
+\textbf{Gfrör.li: Wassertemperatursensoren Zürichsee}
+
+\includegraphics[width=\textwidth]{img/gfroerli.jpg}
+
+Aktuell ist es für badefreudige Personen am Obersee schwierig, herauszufinden
+wie warm oder kalt der See aktuell ist. Wir möchten deshalb in Kooperation mit
+lokalen Vereinen sowie der Hochschule für Technik HSR den Obersee (und später
+den Rest des Zürichsees) mit einem Netzwerk aus
+LoRaWAN-Wassertemperatur-Sensoren ausstatten und diese Messdaten öffentlich über
+Mobile Apps sowie auch über Programmier-Schnittstellen zugänglich machen.
+
+Den aktuellen Prototypen finden Sie unter \url{https://gfrör.li/}.
 
 \textbf{3D-Druck}
 
@@ -182,17 +197,6 @@ einen 3D-Scan des Schlosses Rapperswil erstellt, diese Daten in Kooperation mit
 der Hochschule für Technik HSR sowie dem Rapperswiler Start-Up ``Drei-De''
 aufbereitet und ein druckfertiges Modell erzeugt.
 
-\textbf{Wassertemperatursensoren Zürichsee}
-
-Aktuell ist es für badefreudige Personen am Obersee schwierig, herauszufinden
-wie warm oder kalt der See aktuell ist. Wir möchten deshalb in Kooperation mit
-lokalen Vereinen sowie der Hochschule für Technik HSR den Obersee (und später
-den Rest des Zürichsees) mit einem Netzwerk aus solarbetriebenen
-Wassertemperatur-Sensoren ausstatten und diese Messdaten öffentlich über Mobile
-Apps sowie auch über Programmier-Schnittstellen zugänglich machen.
-
-\includegraphics[width=\textwidth]{img/tesla.jpg}
-
 \section{Finanzierung}
 
 Bisher finanzieren wir uns primär über die Mitgliederbeiträge. Ein
@@ -202,11 +206,12 @@ Mitglieder-Anzahl auf \membercount{} Personen, die meisten davon sind entweder
 Studenten an der HSR oder haben bereits eine technische Ausbildung hinter sich.
 Daneben haben wir einige private Gönner.
 
-Unser Verein wächst stetig. Im Mai sind wir aus Platzmangel aus unserem
-vorherigen 16m²-Vereinsraum in neue Räumlichkeiten im Sonnenhof umgezogen. Um
-unser Angebot in Zukunft jedoch weiterhin ausbauen zu können, reichen die
-Mitgliederbeiträge nicht ganz aus. Deshalb sind wir auf der Suche nach Gönnern
-und Sponsoren, welche uns dabei unterstützen könnten.
+Unser Verein wächst stetig. Im Jahr 2016 sind wir aus Platzmangel aus unserem
+vorherigen 16m²-Vereinsraum in neue Räumlichkeiten im Sonnenhof umgezogen. Und
+anfangs 2018 wechselten wir in einen 100m² Raum im Industriequartier von Jona,
+auf dem Vinora-Areal. Um unser Angebot in Zukunft jedoch weiterhin ausbauen zu
+können, reichen die Mitgliederbeiträge nicht ganz aus. Deshalb sind wir auf der
+Suche nach Gönnern und Sponsoren, welche uns dabei unterstützen könnten.
 
 Wir möchten Ihnen folgende Sponsoring-Pakete vorschlagen:
 
@@ -222,8 +227,8 @@ Als Gegenleistung erhalten Sie als Sponsor folgende Möglichkeiten:
 	\item Einen Werbeplatz in unserem Vereinsraum: Ein A3-Blatt (<<small>>) bzw.
 		ein A2- (<<medium>>) oder A1-Poster (<<large>>), auf dem Sie Ihre Firma
 		vorstellen, Ihre Jobs ausschreiben, oder schlicht Ihr Firmenlogo
-		positionieren können. Das Blatt werden wir in unseren Räumlichkeiten an der
-		Wand befestigen, wodurch sich Mitglieder und Besucher über Ihre Firma
+		positionieren können. Das Blatt werden wir in unseren Räumlichkeiten
+		aufhängen, wodurch sich Mitglieder und Besucher über Ihre Firma
 		informieren können.
 	\item Einen stets sichtbaren Link auf unserer Website, ab <<medium>> mit Logo.
 		Zudem publizieren wir einen Blogpost auf unserer Website, in dem wir Sie als
