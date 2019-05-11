@@ -9,6 +9,11 @@ all: coredump.pdf sponsoring.pdf
 %.pdf: %.tex
 	$(LL) $<
 
+%.compressed.pdf: %.pdf
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$@ $<
+
+compressed: coredump.compressed.pdf sponsoring.compressed.pdf
+
 clean:
 	$(CLEAN)
 
